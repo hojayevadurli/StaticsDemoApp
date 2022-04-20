@@ -5,3 +5,17 @@
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+<h1>Hello, this is Statics web demo </h1>
+
+<p>YOu clicked @timesClicked, as recently @lastClicked</p>
+
+@code
+{
+    int timesClicked=0;
+    DateTime lastClicked;
+    void buttonClick()
+    {
+        timesClicked++;
+        lastClicked=DateTime.Now;
+    }
+}
